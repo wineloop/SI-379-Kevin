@@ -52,23 +52,23 @@ inputEl.addEventListener('keydown', (ev) => {
     if(ev.key === 'Enter') {
         const value = inputEl.value;
         if (value.length !== WORD_LENGTH) {
-            showInfoMessage('Your guess must be ' + WORD_LENGTH + ' letters long.')
+            showInfoMessage('Your guess must be ' + WORD_LENGTH + ' letters long.');
         }
         else if (value === correctAnswer) {
-            showInfoMessage('Your win! The answer was ' + correctAnswer)
-            inputEl.setAttribute('disabled', true)
+            showInfoMessage('Your win! The answer was ' + correctAnswer);
+            inputEl.setAttribute('disabled', true);
         }
        else if (value != correctAnswer) {
             inputEl.value = "";
             const valid = false;
-            isValidWord((value) => {
-                valid = value;
-            })
+            isValidWord(value, (isValid) => {
+                valid = isValid;
+            });
             if (valid) {
                 displayGuessFeedback(value);
             }
             else {
-                showInfoMessage(value + " is not a valid word.")
+                showInfoMessage(value + " is not a valid word.");
             }
             
         }
