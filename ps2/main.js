@@ -60,7 +60,7 @@ inputEl.addEventListener('keydown', (ev) => {
         }
        else if (value != correctAnswer) {
             inputEl.value = "";
-            const valid = false;
+            let valid = false;
             isValidWord(value, (isValid) => {
                 valid = isValid;
             });
