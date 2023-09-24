@@ -51,8 +51,7 @@ function displayGuessFeedback(guess) {
 inputEl.addEventListener('keydown', (ev) => {
     if(ev.key === 'Enter') {
         const value = inputEl.value;
-        console.log(value);
-        if (value.length != WORD_LENGTH) {
+        if (value.length !== WORD_LENGTH) {
             showInfoMessage('Your guess must be ' + WORD_LENGTH + ' letters long.')
         }
         if (value === correctAnswer) {
