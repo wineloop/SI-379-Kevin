@@ -54,14 +54,14 @@ inputEl.addEventListener('keydown', (ev) => {
         if (value.length !== WORD_LENGTH) {
             showInfoMessage('Your guess must be ' + WORD_LENGTH + ' letters long.')
         }
-        if (value === correctAnswer) {
+        else if (value === correctAnswer) {
             showInfoMessage('Your win! The answer was ' + correctAnswer)
             inputEl.setAttribute('disabled', true)
         }
-        if (value != correctAnswer) {
+        else if (value != correctAnswer) {
             inputEl.value = "";
-            if (isValidWord(value)) {
-                displayGuessFeedback(value, correctAnswer);
+            if (isValidWord(value) === true) {
+                displayGuessFeedback(value);
             }
             else {
                 showInfoMessage(value + " is not a valid word.")
