@@ -60,13 +60,14 @@ inputEl.addEventListener('keydown', (ev) => {
         }
         else if (value != correctAnswer) {
             inputEl.value = "";
-            if (isValidWord(value, correctAnswer) === true) {
-                displayGuessFeedback(value);
-            }
-            else {
-                showInfoMessage(value + " is not a valid word.")
-            }
             
+            isValidWord((value) => {
+                displayGuessFeedback(value);
+            }) 
+    
+            !isValidWord((value) => {
+                showInfoMessage(value + " is not a valid word.")
+            }) 
         }
     }
     else {
