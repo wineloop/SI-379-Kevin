@@ -60,7 +60,7 @@ inputEl.addEventListener('keydown', (ev) => {
         }
         else if (value != correctAnswer) {
             inputEl.value = "";
-            if (isValidWord(value) === true) {
+            if (isValidWord(value, correctAnswer) === true) {
                 displayGuessFeedback(value);
             }
             else {
