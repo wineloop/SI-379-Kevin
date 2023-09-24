@@ -61,7 +61,7 @@ inputEl.addEventListener('keydown', (ev) => {
         if (value != correctAnswer) {
             inputEl.value = "";
             if (isValidWord(value)) {
-                displayGuessFeedback(value);
+                displayGuessFeedback(value, correctAnswer);
             }
             else {
                 showInfoMessage(value + " is not a valid word.")
