@@ -58,16 +58,19 @@ inputEl.addEventListener('keydown', (ev) => {
             showInfoMessage('Your win! The answer was ' + correctAnswer)
             inputEl.setAttribute('disabled', true)
         }
-        else if (value != correctAnswer) {
+       else if (value != correctAnswer) {
             inputEl.value = "";
-            
+            const valid = false;
             isValidWord((value) => {
+                valid = value;
+            })
+            if (valid) {
                 displayGuessFeedback(value);
-            }) 
-    
-            !isValidWord((value) => {
+            }
+            else {
                 showInfoMessage(value + " is not a valid word.")
-            }) 
+            }
+            
         }
     }
     else {
