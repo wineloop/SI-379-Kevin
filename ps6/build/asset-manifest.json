@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/SI-379-Kevin/ps6/build/static/css/main.0af15c37.css",
+    "main.js": "/SI-379-Kevin/ps6/build/static/js/main.37e57955.js",
+    "index.html": "/SI-379-Kevin/ps6/build/index.html",
+    "main.0af15c37.css.map": "/SI-379-Kevin/ps6/build/static/css/main.0af15c37.css.map",
+    "main.37e57955.js.map": "/SI-379-Kevin/ps6/build/static/js/main.37e57955.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0af15c37.css",
+    "static/js/main.37e57955.js"
+  ]
+}
