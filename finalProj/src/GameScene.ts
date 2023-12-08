@@ -27,14 +27,14 @@ export default class GameScene extends Phaser.Scene {
 	}
 	
 	preload() {
-		this.load.image('player', 'src/assets/playerr.png')
-		this.load.atlas('a-player', 'src/assets/playerr.png', 'src/assets/playerr.json')
-		this.load.image('ghost', 'src/assets/ghost.png')
-		this.load.atlas('a-ghost', 'src/assets/ghost.png', 'src/assets/ghost.json')
-		this.load.image('finalGhost', 'src/assets/finalGhost.png')
-		this.load.atlas('a-finalGhost', 'src/assets/finalGhost.png', 'src/assets/finalGhost.json')
-		this.load.image('tiles', 'src/assets/tiles.png')
-		this.load.tilemapTiledJSON('map', 'src/assets/map.json')
+		this.load.image('player', '/assets/playerr.png')
+		this.load.atlas('a-player', '/assets/playerr.png', '/assets/playerr.json')
+		this.load.image('ghost', '/assets/ghost.png')
+		this.load.atlas('a-ghost', '/assets/ghost.png', '/assets/ghost.json')
+		this.load.image('finalGhost', '/assets/finalGhost.png')
+		this.load.atlas('a-finalGhost', '/assets/finalGhost.png', '/assets/finalGhost.json')
+		this.load.image('tiles', '/assets/tiles.png')
+		this.load.tilemapTiledJSON('map', '/assets/map.json')
 	}
 
 	create() {
