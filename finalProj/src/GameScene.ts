@@ -28,11 +28,11 @@ export default class GameScene extends Phaser.Scene {
 	
 	preload() {
 		this.load.image('player', 'assets/playerr.png')
-		this.load.atlas('a-player', 'assets/playerr.png', '/assets/playerr.json')
+		this.load.atlas('a-player', 'assets/playerr.png', 'assets/playerr.json')
 		this.load.image('ghost', 'assets/ghost.png')
-		this.load.atlas('a-ghost', 'assets/ghost.png', '/assets/ghost.json')
+		this.load.atlas('a-ghost', 'assets/ghost.png', 'assets/ghost.json')
 		this.load.image('finalGhost', 'assets/finalGhost.png')
-		this.load.atlas('a-finalGhost', 'assets/finalGhost.png', '/assets/finalGhost.json')
+		this.load.atlas('a-finalGhost', 'assets/finalGhost.png', 'assets/finalGhost.json')
 		this.load.image('tiles', 'assets/tiles.png')
 		this.load.tilemapTiledJSON('map', 'assets/map.json')
 	}
